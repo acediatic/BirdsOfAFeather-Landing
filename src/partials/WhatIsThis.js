@@ -46,7 +46,7 @@ function WhatIsThisAndWhakapapa() {
                 <h3 className="h3 mb-3">Our Whakapapa</h3>
               </div>
               {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
+              <div className="mb-16 sm:mb-8">
                 {WhakapapaText.map(({ text }) => (
                   <Whakapapa text={text} />
                 ))}

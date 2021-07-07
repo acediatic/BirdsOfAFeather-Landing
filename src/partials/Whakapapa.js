@@ -18,7 +18,7 @@ export const Whakapapa = (props) => {
   const {text} = props;
   return (
     <div
-      className={`flex items-center text-lg p-5 rounded border mb-3 "bg-white shadow-md border-gray-200 hover:shadow-lg`}
+      className={`flex items-center text-lg p-5 rounded border mb-3 bg-white shadow-md border-gray-200 hover:shadow-lg`}
     >
       <div>
         <div className="font-bold leading-snug tracking-tight mb-1">

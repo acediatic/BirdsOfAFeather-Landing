@@ -4,7 +4,7 @@ import Header from "../partials/Header";
 import HeroHome from "../partials/HeroHome";
 import WhatIsThisAndWhakapapa from "../partials/WhatIsThis";
 import OurWhy from "../partials/OurWhy";
-import Testimonials from "../partials/Testimonials";
+import WhatsTheName from "../partials/WhatsTheName";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import MemberTypes from "../partials/MemberTypes";
@@ -20,8 +20,8 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <WhatIsThisAndWhakapapa />
+        <WhatsTheName />
         <OurWhy />
-        <Testimonials />
         <MemberTypes />
         <Newsletter />
       </main>

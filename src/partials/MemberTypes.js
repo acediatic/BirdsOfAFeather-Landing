@@ -3,9 +3,49 @@ import Mentee from "../images/Mentee.svg";
 import Both from "../images/Both.svg";
 import Executive from "../images/Executive.svg";
 
+// Credit: https://github.com/hasinhayder/tailwind-cards/blob/master/index.html
+
 function MemberTypes() {
   return (
     <section className="container mx-auto py-10 md:py-20 antialiased">
+      <h1 className="text-4xl md:text-4xl font-extrabold text-center leading-tighter tracking-tighter mb-8">
+        How Does It Work?
+      </h1>
+      <p className="m-4 text-lg p-4 pb-0 leading-relaxed">
+        The club has three primary offerings:
+      </p>
+      <ol className="m-4 ml-8 text-lg p-4 pb-0 leading-relaxed list-decimal list-inside">
+        <li>Tutoring younger (school age) students in basic coding.</li>
+        <li>
+          Mentorship (any age)
+          <ul className="list-disc list-inside ml-4 md:ml-8">
+            <li>Internship/CV/interview guidance</li>
+            <li>University papers support</li>
+            <li>Life advice 😊</li>
+          </ul>
+        </li>
+        <li>Tutoring younger (school age) students in basic coding.</li>
+        <li>
+          Events around the above two objectives.
+          <ul className="list-disc list-inside ml-4 md:ml-8">
+            <li>
+              “Speed dating” type mentorship event, from real developers in
+              industry.
+            </li>
+            <li>More!</li>
+          </ul>
+        </li>
+      </ol>
+      <p className="m-4 text-lg p-4 pb-0 leading-relaxed">
+        Coding tuition is completed using CodeHS. It can be done remotely, and
+        is very straightforward if you understand the fundamentals in the
+        programming language you’re teaching. In essence, all lesson content is
+        pre-prepared, which means all you need to do is show up, sign in with
+        your student and pick up where you left off.
+      </p>
+      <h2 className="m-16 text-3xl font-extrabold text-center leading-tighter tracking-tighter mb-8">
+        Club Roles
+      </h2>
       <section className="grid grid-cols-1 gap-8">
         <article className="mx-auto w-full pb-8 bg-cover bg-center transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
           <img className="mx-auto mt-10 w-40" src={Mentor} alt="" />
