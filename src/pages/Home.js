@@ -2,10 +2,10 @@ import React from "react";
 
 import Header from "../partials/Header";
 import HeroHome from "../partials/HeroHome";
-import WhatIsThisAndWhakapapa from "../partials/WhatIsThis";
+import WhatIsThisAndWhakapapa from "../partials/WhatIsThisAndWhakapapa";
 import OurWhy from "../partials/OurWhy";
 import WhatsTheName from "../partials/WhatsTheName";
-import Newsletter from "../partials/Newsletter";
+import Register from "../partials/Register";
 import Footer from "../partials/Footer";
 import MemberTypes from "../partials/MemberTypes";
 
@@ -23,7 +23,7 @@ function Home() {
         <WhatsTheName />
         <OurWhy />
         <MemberTypes />
-        <Newsletter />
+        <Register />
       </main>
 
       {/*  Site footer */}

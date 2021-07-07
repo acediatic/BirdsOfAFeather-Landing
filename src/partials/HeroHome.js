@@ -1,4 +1,5 @@
 import React from "react";
+import BounceRegisterOnce from '../utils/BounceRegisterOnce'
 
 function HeroHome() {
   return (
@@ -62,8 +63,8 @@ function HeroHome() {
               >
                 <div>
                   <a
-                    className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="#0"
+                    className="cursor-pointer btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
+                    onClick={BounceRegisterOnce}
                   >
                     Register Interest
                   </a>

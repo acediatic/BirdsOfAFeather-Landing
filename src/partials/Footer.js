@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,6 +13,7 @@ function Footer() {
               className="text-blue-600 hover:underline"
               href="https://cruip.com/"
               target="_blank"
+              rel="noreferrer"
             >
               Cruip
             </a>
@@ -22,6 +22,7 @@ function Footer() {
               className="text-blue-600 hover:underline"
               href="https://github.com/acediatic"
               target="_blank"
+              rel="noreferrer"
             >
               Adam Sinclair
             </a>
@@ -32,6 +33,7 @@ function Footer() {
               className="text-blue-600 hover:underline"
               href="https://www.freepik.com/vectors/people"
               target="_blank"
+              rel="noreferrer"
             >
               pikisuperstar.
             </a>
@@ -41,6 +43,7 @@ function Footer() {
               className="text-blue-600 hover:underline"
               href="mailto:asin473@aucklanduni.ac.nz"
               target="_blank"
+              rel="noreferrer"
             >
               Contact us.
             </a>

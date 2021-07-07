@@ -1,3 +1,5 @@
+import BounceRegisterOnce from "../utils/BounceRegisterOnce";
+
 const WhatIsThisText = (props) => {
   //   const { registerLink } = props;
   return (
@@ -66,8 +68,8 @@ const WhatIsThisText = (props) => {
       <p>
         If this sounds like it could be for you, please{" "}
         <a
-          className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400"
-          href="#" //{registerLink}
+          className="bg-clip-text text-transparent cursor-pointer bg-gradient-to-r from-blue-500 to-teal-400"
+          onClick={BounceRegisterOnce}
         >
           register your interest.
         </a>
