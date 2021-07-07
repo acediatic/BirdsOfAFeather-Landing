@@ -60,7 +60,7 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <a
+                <button
                   onClick={BounceRegisterOnce}
                   className="cursor-pointer btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3"
                 >
@@ -75,7 +75,7 @@ function Header() {
                       fillRule="nonzero"
                     />
                   </svg>
-                </a>
+                </button>
               </li>
             </ul>
           </nav>

@@ -67,12 +67,12 @@ const WhatIsThisText = (props) => {
       <br />
       <p>
         If this sounds like it could be for you, please{" "}
-        <a
+        <button
           className="bg-clip-text text-transparent cursor-pointer bg-gradient-to-r from-blue-500 to-teal-400"
           onClick={BounceRegisterOnce}
         >
           register your interest.
-        </a>
+        </button>
       </p>
       <br />
     </div>
