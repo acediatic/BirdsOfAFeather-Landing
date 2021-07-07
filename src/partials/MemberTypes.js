@@ -9,11 +9,11 @@ import Logo from "../images/boaf-logo.png";
 function MemberTypes() {
   return (
     <section className="container mx-auto py-10 md:py-20 antialiased">
-      <h1 className="text-4xl md:text-4xl font-extrabold text-center leading-tighter tracking-tighter mb-8">
-        How Does It Work?
-      </h1>
-      <section className="align-middle flex">
-        <span>
+                <h1 className="text-4xl md:text-4xl font-extrabold text-center leading-tighter tracking-tighter mb-8">
+            How Does It Work?
+          </h1>
+      <section className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2 align-middle">
+        <div>
           <p className="m-4 text-lg p-4 pb-0 leading-relaxed">
             The club has three primary offerings:
           </p>
@@ -46,14 +46,10 @@ function MemberTypes() {
             content is pre-prepared, which means all you need to do is show up,
             sign in with your student and pick up where you left off.
           </p>
-        </span>
-        <span className="w-full h-full content-center align-middle">
-          <img
-            className="w-300 h-300 p-32 align-middle "
-            src={Logo}
-            alt="Logo"
-          />
-        </span>
+        </div>
+        <div className="w-full h-full content-center align-middle grid">
+          <img className="w-300 h-300 p-16 align-middle " src={Logo} alt="Logo" />
+        </div>
       </section>
       <h2 className="m-16 text-3xl font-extrabold text-center leading-tighter tracking-tighter mb-8">
         Club Roles
