@@ -61,7 +61,7 @@ function OurWhy() {
           {/* Items */}
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3  items-start md:max-w-2xl lg:max-w-none">
             {boxes.map(({ header, text, icon }) => (
-              <WhyBox header={header} text={text} icon={icon} />
+              <WhyBox key={header} header={header} text={text} icon={icon} />
             ))}
           </div>
         </div>

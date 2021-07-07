@@ -1,7 +1,7 @@
 const WhatIsThisText = (props) => {
-//   const { registerLink } = props;
+  //   const { registerLink } = props;
   return (
-    <>
+    <div className="text-xl text-gray-600">
       <p>
         Birds of a Feather is the conception of two students at the University
         of Auckland.
@@ -67,13 +67,13 @@ const WhatIsThisText = (props) => {
         If this sounds like it could be for you, please{" "}
         <a
           className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400"
-        href='#'//{registerLink}
+          href="#" //{registerLink}
         >
           register your interest.
         </a>
       </p>
       <br />
-    </>
+    </div>
   );
 };
 

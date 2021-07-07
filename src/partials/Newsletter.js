@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+
+function invalidSubmission() {
+  // show invalid message.
+}
 
 function Newsletter() {
+  const [hasSubmitted, setHasSubmitted] = useState(false);
+
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+
+  function trySubmit() {
+    console.log(firstName, lastName, email)
+    if (firstName && lastName && email) {
+      const emailRegex = new RegExp("[A-Za-z]{4}\\d{3}@aucklanduni.ac.nz");
+      const isValidUoAEmail = emailRegex.test(email);
+
+      if (isValidUoAEmail) {
+        // Submit
+        setHasSubmitted(true);
+      } else {
+        invalidSubmission();
+        // hasn't submitted
+      }
+    } else {
+      invalidSubmission();
+    }
+  }
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -110,12 +138,16 @@ function Newsletter() {
                       className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
                       placeholder="Your first name..."
                       aria-label="Your first name..."
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
                     />
                     <input
                       type="text"
                       className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 text-white placeholder-gray-500"
                       placeholder="Your last name..."
                       aria-label="Your last name..."
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
                     />
                   </div>
 
@@ -123,18 +155,31 @@ function Newsletter() {
                     <input
                       type="email"
                       className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
-                      placeholder="Your email…"
+                      placeholder="Your UoA email…"
                       aria-label="Your email…"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
-                    <a
+                    <button
                       className="btn text-white bg-blue-600 hover:bg-blue-700 shadow"
-                      href="#0"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setHasSubmitted(true);
+                      }}
+                      style={{
+                        visibility: !hasSubmitted ? "visible" : "hidden",
+                      }}
                     >
-                      Subscribe
-                    </a>
+                      Submit
+                    </button>
                   </div>
                   {/* Success message */}
-                  {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
+                  <p
+                    style={{ visibility: hasSubmitted ? "visible" : "hidden" }}
+                    className="text-sm text-gray-400 mt-3"
+                  >
+                    Thanks for signing up!
+                  </p>
                 </form>
               </div>
             </div>
