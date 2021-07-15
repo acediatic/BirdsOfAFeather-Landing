@@ -19,11 +19,11 @@ function Home() {
       <main className="flex-grow">
         {/*  Page sections */}
         <HeroHome />
+        <Register />
         <WhatIsThisAndWhakapapa />
         <WhatsTheName />
         <OurWhy />
         <MemberTypes />
-        <Register />
       </main>
 
       {/*  Site footer */}

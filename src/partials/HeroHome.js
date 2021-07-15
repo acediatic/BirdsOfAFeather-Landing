@@ -54,7 +54,21 @@ function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                A proposed <b>new club</b> at the <b>University of Auckland.</b>
+                Birds of a Feather is an exciting proposed club at the University of Auckland.
+              </p>
+              <p
+                className="text-xl text-gray-600 mb-8"
+                data-aos="zoom-y-out"
+                data-aos-delay="150"
+              >
+                Many of us have had a mentor that has really helped make a difference in our lives, whether on a personal or professional level.
+              </p>
+              <p
+                className="text-xl text-gray-600 mb-8"
+                data-aos="zoom-y-out"
+                data-aos-delay="150"
+              >
+                BOAF aims to make these connections easier for our members to make by creating and maintaining a publicly accessible directory of mentors willing to volunteer their time to assist mentees, complete with links to their preferred contact methods.
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -62,12 +76,12 @@ function HeroHome() {
                 data-aos-delay="300"
               >
                 <div>
-                  <button
+                  {/* <button
                     className="cursor-pointer btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
                     onClick={BounceRegisterOnce}
                   >
                     Register Interest
-                  </button>
+                  </button> */}
                 </div>
                 <div>
                   <a
