@@ -53,21 +53,37 @@ function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Birds of a Feather is an exciting proposed club at the University of Auckland.
+                Birds of a Feather is an exciting proposed club at the
+                University of Auckland.
               </p>
               <p
                 className="text-xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Many of us have had a mentor that has really helped make a difference in our lives, whether on a personal or professional level.
+                Many of us have had a mentor that has really helped make a
+                difference in our lives, whether on a personal or professional
+                level.
               </p>
               <p
                 className="text-xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                BOAF aims to make these connections easier for our members to make by creating and maintaining a publicly accessible directory of mentors willing to volunteer their time to assist mentees, complete with links to their preferred contact methods.
+                BOAF aims to make these connections easier for our members to
+                make by creating and maintaining a publicly accessible directory
+                of mentors willing to volunteer their time to assist mentees,
+                complete with links to their preferred contact methods. This
+                will intially be targeted towards tech.
+              </p>
+              <p
+                className="text-xl text-gray-600 mb-8"
+                data-aos="zoom-y-out"
+                data-aos-delay="150"
+              >
+                So if you're happy to give and ask for course advice, interview
+                recommendations, or even simply have a life chat, this could be the
+                club for you!
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
