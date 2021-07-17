@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BirdsOfAFeather-Landing/static/css/main.db3379df.chunk.css",
-    "main.js": "/BirdsOfAFeather-Landing/static/js/main.640250b1.chunk.js",
-    "main.js.map": "/BirdsOfAFeather-Landing/static/js/main.640250b1.chunk.js.map",
+    "main.js": "/BirdsOfAFeather-Landing/static/js/main.94cba89d.chunk.js",
+    "main.js.map": "/BirdsOfAFeather-Landing/static/js/main.94cba89d.chunk.js.map",
     "runtime-main.js": "/BirdsOfAFeather-Landing/static/js/runtime-main.434dbf6a.js",
     "runtime-main.js.map": "/BirdsOfAFeather-Landing/static/js/runtime-main.434dbf6a.js.map",
     "static/js/2.07696429.chunk.js": "/BirdsOfAFeather-Landing/static/js/2.07696429.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.434dbf6a.js",
     "static/js/2.07696429.chunk.js",
     "static/css/main.db3379df.chunk.css",
-    "static/js/main.640250b1.chunk.js"
+    "static/js/main.94cba89d.chunk.js"
   ]
 }
