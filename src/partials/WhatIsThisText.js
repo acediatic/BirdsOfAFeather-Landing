@@ -1,6 +1,6 @@
 import BounceRegisterOnce from "../utils/BounceRegisterOnce";
 
-const WhatIsThisText = (props) => {
+const MotivationText = (props) => {
   //   const { registerLink } = props;
   return (
     <div className="text-xl text-gray-600">
@@ -79,4 +79,4 @@ const WhatIsThisText = (props) => {
   );
 };
 
-export default WhatIsThisText;
+export default MotivationText;
