@@ -92,72 +92,66 @@ function Register() {
 
             <div className="relative flex flex-col lg:flex-row justify-between items-center">
               {/* CTA content */}
-              <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Sound Good?</h3>
-                <p className="text-white text-lg mb-6">
-                  Register your interest
-                </p>
+              {!hasSubmitted ? (
+                <>
+                  <div className="text-center lg:text-left lg:max-w-xl">
+                    <h3 className="h3 text-white mb-2">Sound Good?</h3>
+                    <p className="text-white text-lg mb-6">
+                      Register your interest
+                    </p>
+                    <form className="w-full lg:w-auto">
+                      <div className="flex flex-col sm:flex-row justify-between max-w-xs mx-auto mb-2 sm:max-w-md lg:mx-0 ">
+                        <input
+                          type="text"
+                          className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
+                          placeholder="Your first name..."
+                          aria-label="Your first name..."
+                          value={firstName}
+                          onChange={(e) => setFirstName(e.target.value)}
+                          required
+                        />
+                        <input
+                          type="text"
+                          className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 text-white placeholder-gray-500"
+                          placeholder="Your last name..."
+                          aria-label="Your last name..."
+                          value={lastName}
+                          onChange={(e) => setLastName(e.target.value)}
+                          required
+                        />
+                      </div>
 
-                {/* CTA form */}
-                <form className="w-full lg:w-auto">
-                  <div className="flex flex-col sm:flex-row justify-between max-w-xs mx-auto mb-2 sm:max-w-md lg:mx-0 ">
-                    <input
-                      type="text"
-                      className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
-                      placeholder="Your first name..."
-                      aria-label="Your first name..."
-                      value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)}
-                      required
-                    />
-                    <input
-                      type="text"
-                      className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 text-white placeholder-gray-500"
-                      placeholder="Your last name..."
-                      aria-label="Your last name..."
-                      value={lastName}
-                      onChange={(e) => setLastName(e.target.value)}
-                      required
-                    />
-                  </div>
+                      <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto  sm:max-w-md lg:mx-0">
+                        <input
+                          type="email"
+                          className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
+                          placeholder="Your UoA email…"
+                          aria-label="Your email…"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          required
+                          pattern="[A-Za-z]{4}\d{3}@aucklanduni.ac.nz"
+                          title="YourUPI@aucklanduni.ac.nz"
+                        />
 
-                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto  sm:max-w-md lg:mx-0">
-                    <input
-                      type="email"
-                      className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
-                      placeholder="Your UoA email…"
-                      aria-label="Your email…"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                      pattern="[A-Za-z]{4}\d{3}@aucklanduni.ac.nz"
-                      title="YourUPI@aucklanduni.ac.nz"
-                    />
-                    {!hasSubmitted ? (
-                      <button
-                        className="btn text-white bg-blue-600 hover:bg-blue-700 shadow"
-                        type="submit"
-                        onClick={(e) => {
-                          // TODO
-                          e.preventDefault();
-                          submitForm();
-                        }}
-                      >
-                        Submit
-                      </button> /* Success message */
-                    ) : (
-                      <p
-                        style={{
-                          visibility: hasSubmitted ? "visible" : "hidden",
-                        }}
-                        className="text-sm text-white mt-3"
-                      >
-                        Thanks for signing up!
-                      </p>
-                    )}
+                        <button
+                          className="btn text-white bg-blue-600 hover:bg-blue-700 shadow"
+                          type="submit"
+                          onClick={(e) => {
+                            // TODO
+                            e.preventDefault();
+                            submitForm();
+                          }}
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
                   </div>
-                </form>
-              </div>
+                </>
+              ) : (
+                <h3 className="h3 text-white mb-2">Thanks for signing up!</h3>
+              )}
             </div>
           </div>
         </div>

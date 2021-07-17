@@ -1,5 +1,4 @@
 import React from "react";
-import BounceRegisterOnce from "../utils/BounceRegisterOnce";
 
 function HeroHome() {
   return (
