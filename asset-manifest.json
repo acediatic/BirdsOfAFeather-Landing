@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BirdsOfAFeather-Landing/static/css/main.db3379df.chunk.css",
-    "main.js": "/BirdsOfAFeather-Landing/static/js/main.94cba89d.chunk.js",
-    "main.js.map": "/BirdsOfAFeather-Landing/static/js/main.94cba89d.chunk.js.map",
+    "main.js": "/BirdsOfAFeather-Landing/static/js/main.f6352153.chunk.js",
+    "main.js.map": "/BirdsOfAFeather-Landing/static/js/main.f6352153.chunk.js.map",
     "runtime-main.js": "/BirdsOfAFeather-Landing/static/js/runtime-main.434dbf6a.js",
     "runtime-main.js.map": "/BirdsOfAFeather-Landing/static/js/runtime-main.434dbf6a.js.map",
     "static/js/2.07696429.chunk.js": "/BirdsOfAFeather-Landing/static/js/2.07696429.chunk.js",
@@ -15,12 +15,12 @@
     "static/media/FlyingBirds.24b87b60.png": "/BirdsOfAFeather-Landing/static/media/FlyingBirds.24b87b60.png",
     "static/media/Mentee.42d0d63e.svg": "/BirdsOfAFeather-Landing/static/media/Mentee.42d0d63e.svg",
     "static/media/Mentor.32dc81ac.svg": "/BirdsOfAFeather-Landing/static/media/Mentor.32dc81ac.svg",
-    "static/media/boaf-logo.367f9fb0.png": "/BirdsOfAFeather-Landing/static/media/boaf-logo.367f9fb0.png"
+    "static/media/boaf-logo.6c3b5fc0.png": "/BirdsOfAFeather-Landing/static/media/boaf-logo.6c3b5fc0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.434dbf6a.js",
     "static/js/2.07696429.chunk.js",
     "static/css/main.db3379df.chunk.css",
-    "static/js/main.94cba89d.chunk.js"
+    "static/js/main.f6352153.chunk.js"
   ]
 }
