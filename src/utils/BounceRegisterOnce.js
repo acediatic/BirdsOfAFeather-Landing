@@ -1,6 +1,6 @@
 function BounceRegisterOnce() {
   const registerInternal = document.getElementById("register-internal");
-  registerInternal.scrollIntoView();
+  registerInternal.scrollIntoView(false);
 }
 
 export default BounceRegisterOnce;
