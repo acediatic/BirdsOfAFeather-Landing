@@ -131,8 +131,8 @@ function Register() {
                           required
                         />
                       </div>
-                      <div className="pb-2 flex mx-auto sm:max-w-md lg:mx-0">
-                        <div className="w-full pr-2">
+                      <div className="mb-2 flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
+                        <div className="w-full mr-2">
                           <label className="w-full inline-flex items-center appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 text-white placeholder-gray-500">
                             <input
                               type="checkbox"
@@ -145,7 +145,7 @@ function Register() {
                             <span className="ml-2">Mentee</span>
                           </label>
                         </div>
-                        <div className="w-full pr-2">
+                        <div className="w-full mr-2">
                           <label className="w-full inline-flex items-center appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 text-white placeholder-gray-500">
                             <input
                               type="checkbox"
