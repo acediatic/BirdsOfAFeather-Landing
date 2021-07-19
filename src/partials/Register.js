@@ -9,13 +9,24 @@ function Register() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
 
+  const [menteeInterest, setMenteeInterest] = useState(false);
+  const [mentorInterest, setMentorInterest] = useState(false);
+  const [execInterest, setExecInterest] = useState(false);
+
   const submitForm = () => {
     // remove leading/trailing whitespace
     let cleanFirstName = firstName.trim();
     let cleanLastName = lastName.trim();
     let cleanEmail = email.trim();
 
-    const cleanedUserDetails = { cleanFirstName, cleanLastName, cleanEmail };
+    const cleanedUserDetails = {
+      cleanFirstName,
+      cleanLastName,
+      cleanEmail,
+      menteeInterest,
+      mentorInterest,
+      execInterest,
+    };
     const submissionResult = formValidation(cleanedUserDetails);
 
     // submit data to Pipedream.
@@ -120,8 +131,49 @@ function Register() {
                           required
                         />
                       </div>
+                      <div className="pb-2 flex mx-auto sm:max-w-md lg:mx-0">
+                        <div className="w-full pr-2">
+                          <label className="w-full inline-flex items-center appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 text-white placeholder-gray-500">
+                            <input
+                              type="checkbox"
+                              className="form-checkbox"
+                              value={menteeInterest}
+                              onClick={(e) =>
+                                setMenteeInterest(e.target.checked)
+                              }
+                            />
+                            <span className="ml-2">Mentee</span>
+                          </label>
+                        </div>
+                        <div className="w-full pr-2">
+                          <label className="w-full inline-flex items-center appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 text-white placeholder-gray-500">
+                            <input
+                              type="checkbox"
+                              className="form-checkbox"
+                              value={mentorInterest}
+                              onChange={(e) =>
+                                setMentorInterest(e.target.checked)
+                              }
+                            />
+                            <span className="ml-2">Mentor</span>
+                          </label>
+                        </div>
+                        <div className="w-full">
+                          <label className="w-full sm:max-w-md inline-flex items-center appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 text-white placeholder-gray-500">
+                            <input
+                              type="checkbox"
+                              className="form-checkbox"
+                              value={execInterest}
+                              onChange={(e) =>
+                                setExecInterest(e.target.checked)
+                              }
+                            />
+                            <span className="ml-2">Executive</span>
+                          </label>
+                        </div>
+                      </div>
 
-                      <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto  sm:max-w-md lg:mx-0">
+                      <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                         <input
                           type="email"
                           className="w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
