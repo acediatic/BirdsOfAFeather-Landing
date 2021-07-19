@@ -1,4 +1,5 @@
 import React from "react";
+import BounceRegisterOnce from "../utils/BounceRegisterOnce";
 
 function HeroHome() {
   return (
@@ -54,7 +55,7 @@ function HeroHome() {
                 data-aos-delay="150"
               >
                 Birds of a Feather is an exciting proposed club at the
-                University of Auckland.
+                University of Auckland 🎉
               </p>
               <p
                 className="text-xl text-gray-600 mb-8"
@@ -71,10 +72,7 @@ function HeroHome() {
                 data-aos-delay="150"
               >
                 BOAF aims to make these connections easier for our members to
-                make by creating and maintaining a publicly accessible directory
-                of mentors willing to volunteer their time to assist mentees,
-                complete with links to their preferred contact methods. This
-                will intially be targeted towards tech.
+                make, with an initial focus on those in tech.
               </p>
               <p
                 className="text-xl text-gray-600 mb-8"
@@ -82,8 +80,20 @@ function HeroHome() {
                 data-aos-delay="150"
               >
                 So if you're happy to give and ask for course advice, interview
-                recommendations, or even simply have a life chat, this could be the
-                club for you!
+                recommendations, or even simply have a life chat, this could be
+                the club for you!
+              </p>
+              <p
+                className="text-xl text-gray-600 mb-8"
+                data-aos="zoom-y-out"
+                data-aos-delay="150"
+              >
+                We're collecting expressions of interest at the moment, so check
+                us out and put your name down (no obligations!){" "}
+                <button onClick={BounceRegisterOnce}>
+                  <b>below </b>
+                </button>
+                👨‍💻👩‍💻
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
