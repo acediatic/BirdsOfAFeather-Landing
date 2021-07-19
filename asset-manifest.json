@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/BirdsOfAFeather-Landing/static/css/main.f155c8eb.chunk.css",
-    "main.js": "/BirdsOfAFeather-Landing/static/js/main.486117b8.chunk.js",
-    "main.js.map": "/BirdsOfAFeather-Landing/static/js/main.486117b8.chunk.js.map",
+    "main.css": "/BirdsOfAFeather-Landing/static/css/main.83af5d6b.chunk.css",
+    "main.js": "/BirdsOfAFeather-Landing/static/js/main.3e4850ee.chunk.js",
+    "main.js.map": "/BirdsOfAFeather-Landing/static/js/main.3e4850ee.chunk.js.map",
     "runtime-main.js": "/BirdsOfAFeather-Landing/static/js/runtime-main.434dbf6a.js",
     "runtime-main.js.map": "/BirdsOfAFeather-Landing/static/js/runtime-main.434dbf6a.js.map",
     "static/js/2.07696429.chunk.js": "/BirdsOfAFeather-Landing/static/js/2.07696429.chunk.js",
     "static/js/2.07696429.chunk.js.map": "/BirdsOfAFeather-Landing/static/js/2.07696429.chunk.js.map",
     "index.html": "/BirdsOfAFeather-Landing/index.html",
-    "static/css/main.f155c8eb.chunk.css.map": "/BirdsOfAFeather-Landing/static/css/main.f155c8eb.chunk.css.map",
+    "static/css/main.83af5d6b.chunk.css.map": "/BirdsOfAFeather-Landing/static/css/main.83af5d6b.chunk.css.map",
     "static/js/2.07696429.chunk.js.LICENSE.txt": "/BirdsOfAFeather-Landing/static/js/2.07696429.chunk.js.LICENSE.txt",
     "static/media/Both.888a523e.svg": "/BirdsOfAFeather-Landing/static/media/Both.888a523e.svg",
     "static/media/Executive.5aaa6ba8.svg": "/BirdsOfAFeather-Landing/static/media/Executive.5aaa6ba8.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.434dbf6a.js",
     "static/js/2.07696429.chunk.js",
-    "static/css/main.f155c8eb.chunk.css",
-    "static/js/main.486117b8.chunk.js"
+    "static/css/main.83af5d6b.chunk.css",
+    "static/js/main.3e4850ee.chunk.js"
   ]
 }
