@@ -18,7 +18,6 @@ function MemberTypes() {
             The club has three primary offerings:
           </p>
           <ol className="m-4 ml-8 text-lg p-4 pb-0 leading-relaxed list-decimal list-inside">
-            <li>Tutoring younger (school age) students in basic coding.</li>
             <li>
               Mentorship (any age)
               <ul className="list-disc list-inside ml-4 md:ml-8">
